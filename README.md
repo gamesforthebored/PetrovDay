@@ -3,17 +3,17 @@ Petrov Day
 
 This is a fork of the original Petrov Day ceremony with changes for COVID-19.
 
-The original ceremony is designed for groups of 5-10 people and is typically performed indoors at a table. To better accommodate social distancing guidelines for COVID-19, we have updated the ceremony to be outdoors, and made equipment and ceremony changes that hew to the intentions of the original while following social distancing guidelines.
+The original ceremony is designed for groups of 5-10 people and is typically performed indoors at a table. To better accommodate social distancing guidelines for COVID-19, we have modified the ceremony to be outdoors, and made equipment and ceremonial changes that hew to the intentions of the original while following social distancing guidelines.
 
 ## Recommendations
 
-* Conduct the ceremony outside
-* Forgo the potluck
+* Conduct the ceremony outside, in a low-fire-risk area
+* Forgo the customary potluck
 * All participants wear a mask
 * A 6-foot buffer around each participant should be kept at all times
 * Minimize handling of ceremony equipment by multiple people
 * Start the ceremony at sunset
-* Designate a Keeper of the Flame to perform most of the candle actions
+* Designate a "Keeper of the Flame" to perform most of the candle actions
 
 ## Original README
 
