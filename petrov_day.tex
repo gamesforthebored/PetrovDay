@@ -7,6 +7,26 @@
 \usepackage{graphicx}
 \usepackage[utf8]{inputenc}
 
+\usepackage{ulem}
+\usepackage[outline]{contour}
+\newcommand \myul[4]{%
+  \begingroup%
+  \renewcommand \ULdepth {#1}%
+  \renewcommand \ULthickness {#2}%
+  \contourlength{#3}%
+  \uline{\phantom{#4}}\llap{\contour{white}{#4}}%
+  \endgroup%
+}
+
+\newcommand \myulline[4]{%
+  \begingroup%
+  \renewcommand \ULdepth {#1}%
+  \renewcommand \ULthickness {#2}%
+  \contourlength{#3}%
+  \noindent\rlap{\uline{\hspace{\textwidth}}}\contour{white}{#4}%
+  \endgroup%
+}
+
 \begin{document}
 \author{James Babcock (jimrandomh@gmail.com)}
 \title{Petrov Day}
@@ -134,20 +154,21 @@ possible.
 \pagenumbering{arabic}
 \page{
 
-Set up a \underline{table} in the middle of the room and gather everyone around.
+Set up a \myul{2pt}{0.5pt}{1pt}{table} in the middle of the room and gather everyone around.
 
 Place on the table:
 \begin{itemize} \itemsep0pt \parskip0pt \parsep0pt
-	\item a \underline{candelabrum} with eight holders,
-	\item \underline{seven unlit candles} in a \underline{tray} (but not in the
-	candelabrum), and
-	\item a \underline{lighter or matches} (and if the latter, \underline{a cup
-	of sand or water} in which to douse them).
+	\item a \myul{2pt}{0.5pt}{1pt}{candelabrum} with eight holders,
+	\item \myul{2pt}{0.5pt}{1pt}{seven unlit candles} in a
+	\myul{2pt}{0.5pt}{1pt}{tray} (but not in the candelabrum), and
+	\item a \myul{2pt}{0.5pt}{1pt}{lighter or matches} (and if the latter,
+	\myul{2pt}{0.5pt}{1pt}{a cup of sand or water} in which to douse them).
 \end{itemize}
 
-Take an \underline{eighth candle} and insert it into a \underline{candle-holder}
-so that it can be moved around without dripping wax. Have a \underline{printed
-copy} \underline{of this booklet} ready.
+Take an \myul{2pt}{0.5pt}{1pt}{eighth candle} and insert it into a
+\myul{2pt}{0.5pt}{1pt}{candle-holder} so that it can be moved around without
+dripping wax. Have a \myul{2pt}{0.5pt}{1pt}{printed copy}
+\myul{2pt}{0.5pt}{1pt}{of this booklet} ready.
 
 The ceremony should begin after dark. Start with the lights on or dimmed, but
 turn them off once the first candle is lit.
@@ -326,9 +347,8 @@ The third candle again, for writing.
 % ΣΤΗΣΑΙ ΕΝ ΕΚΑΣΤΩΙ ΤΩΝ ΤΕ ΠΡΩΤΩΝ ΚΑΙ ΔΕΥΤΕΡΩ[...]
 This decree [shall be inscribed] on a tablet of hard stone in hieroglyphic,
 demotic, and Greek writing and set up in each of the temples of the first,
-second, and third rank beside the image of the King Ptolemy, ever-living,
-beloved of Ptah, the god manifest, lord of good deeds.}{Rosetta Stone (c. 196
-BC)}
+second, and third rank beside the image of the \myul{2pt}{0.5pt}{1pt}{King
+Ptolemy, ever-living, beloved of Ptah}, the god manifest, lord of good
 
 }
 
