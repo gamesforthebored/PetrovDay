@@ -9,7 +9,7 @@
 \usepackage[utf8]{inputenc}
 
 \usepackage[colorlinks=true]{hyperref}
-
+\renewcommand{\footnotesize}{\normalsize}
 \usepackage{endnotes}
 \let\footnote=\endnote
 
@@ -45,6 +45,15 @@
 	\hspace{\fill}\rule{0.5\linewidth}{.7pt}\hspace{\fill}
 	\par\nointerlineskip \vspace{\baselineskip}
 } %}}}
+\newcommand{\dividerend}{ %{{{
+	\nointerlineskip \vspace{\baselineskip}
+	\hspace{\fill}\rule{0.5\linewidth}{.7pt}\hspace{\fill}
+
+	\nointerlineskip\hspace{\fill}\rule{0.4\linewidth}{.7pt}\hspace{\fill}
+
+	\nointerlineskip\hspace{\fill}\rule{0.3\linewidth}{.7pt}\hspace{\fill}
+	\par\nointerlineskip \vspace{\baselineskip}
+}
 \newcommand{\stagedir} [1] { %{{{
 	\begin{itshape}
 	#1
@@ -125,6 +134,8 @@
 \setlength{\parindent}{0cm}
 
 \setlength{\parskip}{\baselineskip}
+
+\newcommand{\notenewline}{\newline \hspace*{1.8em}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
@@ -243,13 +254,12 @@ The first candle, for fire.
 	For man, and mighty teacher of all arts.\newline
 	This is the crime that I must expiate\newline
 	Hung here in chains, nailed 'neath the open sky.\newline}
-{Prometheus Bound, Aeschylus (c. 450 BC)\footnote{Greek: Aeschylus,
+{Prometheus Bound, Aeschylus (c. 450 BC)\footnote{\textbf{Greek:} Aeschylus,
 \textit{Prometheus Bound} 109--113.
 \href{https://el.wikisource.org/wiki/\%CE\%A0\%CF\%81\%CE\%BF\%CE\%BC\%CE\%B7\%CE\%B8\%CE\%B5\%CF\%8D\%CF\%82_\%CE\%94\%CE\%B5\%CF\%83\%CE\%BC\%CF\%8E\%CF\%84\%CE\%B7\%CF\%82\#110}
 {Link}
-
-English: Cookson, G.M., trans.\ (1922). \textit{Four Plays of Aeschylus}
-(p.\ 167). Holywell Press.
+\notenewline \textbf{English:} Cookson, G.M., trans.\ (1922). \textit{Four Plays
+of Aeschylus} (p.\ 167). Holywell Press.
 \href{https://en.wikisource.org/wiki/Four_Plays_of_Aeschylus_(Cookson)/Prometheus_Bound}
 {Link}
 }}}
@@ -325,18 +335,15 @@ Do you believe that there is any truth in ancient traditions [...] about the
 many destructions of mankind which have been occasioned by deluges and
 pestilences, and in many other ways, and of the survival of a remnant? ---
 Every one is disposed to believe them. --- Let us consider one of them, that
-which was caused by the famous deluge.}{Laws, Plato (c. 350 BC)\footnote{
-Greek: Plato, \textit{Laws} 3.677a. \href{https://www.perseus.tufts.edu/hopper/text?doc=Plat.+Laws+3.677&fromdoc=Perseus:text:1999.01.0165}{Link}
-
-English: Plato. 1875. \textit{Laws}. Translated by B. Jowett.
-\href{https://en.wikisource.org/wiki/Laws_(Jowett)/Book_III}{Link}
-
-Date: Adams, J.P.\ (2008, May 28). \textit{Platonic Chronology and Writings}.
-\href{https://www.csun.edu/~hcfll004/platochron.html}{Link}
-}
-}
-
-}
+which was caused by the famous deluge.}{Laws, Plato (c. 350 BC)
+\footnote{\textbf{Greek:} Plato, \textit{Laws} 3.677a.
+\href{https://www.perseus.tufts.edu/hopper/text?doc=Plat.+Laws+3.677&fromdoc=Perseus:text:1999.01.0165}
+{Link}
+\notenewline \textbf{English:} Plato. 1875. \textit{Laws}. Translated by B.\ 
+Jowett. \href{https://en.wikisource.org/wiki/Laws_(Jowett)/Book_III}{Link}
+\notenewline \textbf{Date:} Adams, J.P.\ (2008, May 28). \textit{Platonic
+Chronology and Writings}. \href{https://www.csun.edu/~hcfll004/platochron.html}
+{Link}}}}
 
 \page{
 
@@ -363,12 +370,12 @@ The third candle again, for writing.
 ΚΑΙ ΣΤΗΣΑΙ ΕΝ ΕΚΑΣΤΩΙ ΤΩΝ ΤΕ ΠΡΩΤΩΝ ΚΑΙ ΔΕΥΤΕΡΩ[...]}\newline
 
 This decree [shall be inscribed] on a tablet of hard stone in hieroglyphic,
-demotic, and Greek writing and set up in each of the temples of the first,
-second, and third rank beside the image of the King
-\myul{2pt}{0.5pt}{1pt}{Ptolemy, ever-living, beloved of Ptah}, the god manifest,
-lord of good deeds.}{Rosetta Stone (c. 196 BC)\footnote{Budge, E.A.\ Wallis.
-(1929). \textit{The Rosetta Stone in the British Museum} (pp.\ 75, 168--9). The
-Religious Tract Society.}}
+demotic, and Greek writing and set up in the sanctuaries in each of the
+aforementioned temples of the first, second, and third rank beside the image of
+the King \myul{2pt}{0.5pt}{1pt}{Ptolemy, ever-living, beloved of Ptah}, the god
+manifest, lord of good deeds.}{Rosetta Stone (c. 196 BC)\footnote{Budge, E.A.\
+Wallis. (1929). \textit{The Rosetta Stone in the British Museum} (pp.\ 75, 123,
+168--9). The Religious Tract Society.}}
 
 }
 
@@ -411,13 +418,12 @@ He therefore who wishes to rejoice without doubt in regard to the truths
 underlying phenomena must know how to devote himself to experiment. For authors
 write many statements, and people believe them through reasoning which they
 formulate without experience. Their reasoning is wholly false.}{Roger Bacon,
-Opus Majus (1266) \footnote{Latin: Bridges, Henry, ed.\ (1898). \textit{The
-`Opus Majus' of Roger Bacon} (vol.\ 2, p.\ 168). Clarendon press.
+Opus Majus (1266) \footnote{\textbf{Latin:} Bridges, Henry, ed.\ (1898).
+\textit{The `Opus Majus' of Roger Bacon} (vol.\ 2, p.\ 168). Clarendon Press.
 \href{https://archive.org/details/opusmajusofroger02bacouoft/page/168/mode/2up}
 {Link}
-
-English: Burke, Robert Belle, trans.\ (1962). \textit{The Opus Majus of Roger
-Bacon} (vol.\ 2, p.\ 584). Russell \& Russell Inc.
+\notenewline \textbf{English:} Burke, Robert Belle, trans.\ (1962). \textit{The
+Opus Majus of Roger Bacon} (vol.\ 2, p.\ 584). Russell \& Russell Inc.
 \href{https://archive.org/details/opusmajusofroger002065mbp/page/n183/mode/2up}
 {Link}}}
 
@@ -492,8 +498,8 @@ would be left far behind.\newline
 
 Thus the first ultraintelligent machine is the last invention that man need ever
 make, provided that the machine is docile enough to tell us how to keep it under
-control.}{I. J. Good, Speculations Concerning the First Ultraintelligent Machine
-(1963)}
+control.}{I.J.\ Good, Speculations Concerning the First Ultraintelligent
+Machine (1963)}
 
 }
 
@@ -607,9 +613,9 @@ candle and hold it high, saying:}
 
 Another seventh candle, for an empty future.
 
-\stagedir{Place the candle, still unlit, in the last slot of the candelabrum.
-Take the candle-holder with the lit candle back to your seat, and pass it and
-the booklet along.}
+\stagedir{Place the candle, still unlit, in the second-to-last slot of the
+candelabrum. Take the candle-holder with the lit candle back to your seat, and
+pass it and the booklet along.}
 
 \candelabrum{images/candelabrum_6_unlit_2.png}
 
@@ -628,8 +634,8 @@ of the candelabrum.
 
 Lay the booklet flat on the table.
 
-Take the two unlit candles from the candelabrum and hold them close to the flame
-of the candle you just placed in the candelabrum, without lighting either.}
+Take the two unlit candles from the candelabrum and, without lighting either,
+hold them near the flame of the candle you just placed in the candelabrum.}
 
 \candelabrum{images/candelabrum_6_unlit_2_in_hand.png}
 
@@ -643,8 +649,8 @@ to your seat, and pass it along.}
 
 \page{
 
-After each of the six invocations, when the candle is raised, repeat together
-``We will remember''. After the seventh, repeat ``So say we all''.
+After each of the six invocations, when the candle is raised, say together ``We
+will remember''. After the seventh, say together ``So say we all''.
 
 \divider
 
@@ -661,9 +667,9 @@ That we can make light, even in the darkest times---
 
 \stagedir{Raise the candle high.}
 
----we will remember.
+\textit{(All):} ---we will remember.
 
-\textit{(All):} We will remember.
+\stagedir{Return the candle to its slot.}
 
 }
 
@@ -682,9 +688,9 @@ That we can learn and teach---
 
 \stagedir{Raise the candle high.}
 
----we will remember.
+\textit{(All):} ---we will remember.
 
-\textit{(All):} We will remember.
+\stagedir{Return the candle to its slot.}
 
 }
 
@@ -704,9 +710,9 @@ That we have a hoard of knowledge upon which to build---
 
 \stagedir{Raise the candle high.}
 
----we will remember.
+\textit{(All):} ---we will remember.
 
-\textit{(All):} We will remember.
+\stagedir{Return the candle to its slot.}
 
 }
 
@@ -725,9 +731,9 @@ That we can forecast the future, and work to sway its course---
 
 \stagedir{Raise the candle high.}
 
----we will remember.
+\textit{(All):} ---we will remember.
 
-\textit{(All):} We will remember.
+\stagedir{Return the candle to its slot.}
 
 }
 
@@ -748,9 +754,9 @@ That we can turn our thoughts to other, greater things---
 
 \stagedir{Raise the candle high.}
 
----we will remember.
+\textit{(All):} ---we will remember.
 
-\textit{(All):} We will remember.
+\stagedir{Return the candle to its slot.}
 
 }
 
@@ -770,13 +776,13 @@ That we, the children of computing, are powerful---
 
 \stagedir{Raise the candle high.}
 
----we will remember.
+\textit{(All):} ---we will remember.
 
-\textit{(All):} We will remember.
+\stagedir{Return the candle to its slot.}
 
 }
 
-\page{
+\pageNoBottomDiv{
 
 \begin{center}
 	\includegraphics[width=0.5in]{images/candle_7a_flourishing_future.png}
@@ -789,16 +795,14 @@ fear, and free for all things to come.
 
 \stagedir{Raise the candle high.}
 
-So say we all.
-
 \textit{(All):} So say we all.
 
 \candelabrum{images/final_candelabrum.png}
 
-\stagedir{Return the candle to the last slot of the candelabrum. Turn on the
-lights and then put out the candles. This concludes the ceremony.}
+\stagedir{Return the candle to its slot. Turn on the lights and then put out the
+candles. This concludes the ceremony.}
 
-\divider \divider
+\dividerend
 
 }
 
